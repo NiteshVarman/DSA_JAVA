@@ -1,3 +1,4 @@
+import java.util.*;
 public class backtracking {
     public static void queens(char board[][], int row) { //O(n!)  
         if(row == board.length) {
@@ -50,7 +51,8 @@ public class backtracking {
     }
 
     public static void main(String args[]) {
-        int n = 4;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         char board[][] = new char[n][n];
         //initialize
         for(int i=0; i<n; i++) {
