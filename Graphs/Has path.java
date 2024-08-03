@@ -58,7 +58,7 @@ public class graphs {
         if (src == dst) {
             return true;
         }
-        vis[src] = true; // Corrected from '=='
+        vis[src] = true; 
         for (int i = 0; i < graph[src].size(); i++) {
             Edge e = graph[src].get(i);
             if (!vis[e.dst] && hasPath(graph, e.dst, dst, vis)) {
