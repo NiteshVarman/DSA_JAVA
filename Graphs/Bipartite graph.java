@@ -70,6 +70,9 @@ public class graphs {
         ArrayList<Edge>[] graph = new ArrayList[v];
         createGraph(graph);
         System.out.println(bipartite(graph));
+        //odd cycle - false
+        //even cycle - true
+        //acyclic - true
     
     }
 }
