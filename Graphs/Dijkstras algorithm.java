@@ -57,7 +57,7 @@ public class Graphs {
         pq.add(new Pair(src, 0));
 
         while (!pq.isEmpty()) {
-            Pair curr = pq.poll(); /
+            Pair curr = pq.poll(); 
             int u = curr.n;
 
             if (vis[u]) {
