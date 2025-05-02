@@ -9,7 +9,7 @@ class Solution {
         if (dp[n][w] != -1) {
             return dp[n][w];
         }
-
+ 
         if (wt[n - 1] <= w) {
             // include
             int ans1 = val[n - 1] + knapsack(val, wt, w - wt[n - 1], n - 1, dp);
@@ -17,6 +17,7 @@ class Solution {
             int ans2 = knapsack(val, wt, w, n - 1, dp);
             dp[n][w] = Math.max(ans1, ans2);
             return dp[n][w];
+
         } else {
             dp[n][w] = knapsack(val, wt, w, n - 1, dp);
             return dp[n][w];
